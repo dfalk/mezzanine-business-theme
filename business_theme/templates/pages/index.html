@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load i18n mezzanine_tags %}
+
+{% block meta_title %}{% if page.meta_title %}{{ page.meta_title }}{% else %}{{ settings.SITE_TITLE }}{% if settings.SITE_TAGLINE %} - {{ settings.SITE_TAGLINE }}{% endif %}{% endif %}{% endblock %}
+
+{% block meta_description %}{% if page.description %}{{ page.description }}{% endif %}{% endblock %}
+
+{% block meta_keywords %}{% if page.meta_keywords %}{{ page.meta_keywords }}{% endif %}{% endblock %}
+
+{% block all_content %}
+
+    <div class="jumbotron">
+    <div class="container">
+        <div class="row"><div class="col-md-12">
+            {% editable page.homepage.heading page.homepage.subheading page.homepage.heading_button page.homepage.heading_link %}
+            <h1>{{ page.homepage.heading }}</h1>
+            <p>{{ page.homepage.subheading|linebreaks }}</p>
+            {% if page.homepage.heading_link %}<p><a class="btn btn-primary btn-lg" href="{{ page.homepage.heading_link }}">{{ page.homepage.heading_button }}</a></p>{% endif %}
+            {% endeditable %}
+        </div></div>
+    </div>
+    </div>
+    
+    <div id="iconbox" class="section">
+    <div class="container">
+      {% if page.homepage.iconbox_heading %}
+      <div class="row" id="iconbox-title" >
+          <div class="col-md-12">
+              {% editable page.homepage.iconbox_heading %}
+              <h2>{{ page.homepage.iconbox_heading }}</h2>
+              {% endeditable %}
+          </div>
+      </div>
+      {% endif %}
+      <div class="row" id="iconbox-blurbs">
+        {% if page.homepage.blurbs.all %}
+            {% for iconblurb in page.homepage.blurbs.all %}
+            <div class="blurb col-md-4">
+              {% if iconblurb.icon %}
+              <div class="blurb-img">
+              <a href="{{ iconblurb.link }}"><img src="{{ MEDIA_URL }}{% thumbnail iconblurb.icon 200 0 %}" /></a>
+              </div>
+              {% endif %}
+              <h3>{{ iconblurb.title }}</h3>
+               <p class="blurb-content">{{ iconblurb.content }}</p>
+               {% if iconblurb.link %}<p><a class="btn btn-default" href="{{ iconblurb.link }}">{% trans "View details" %} &raquo;</a></p>{% endif %}
+            </div>
+            {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+    </div><!-- /section iconbox -->
+
+{% endblock %}

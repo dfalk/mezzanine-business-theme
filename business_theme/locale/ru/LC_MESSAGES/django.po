@@ -1,0 +1,170 @@
+# Starter business theme for Mezzanine CMS
+# Copyright (C) 2014 Dmitry Falk
+# This file is distributed under the same license as the PACKAGE package.
+# Dmitry Falk <dfalk5@gmail.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-18 13:10+0400\n"
+"PO-Revision-Date: 2014-08-18 12:57+0400\n"
+"Last-Translator: Dmitry Falk <dfalk5@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: models.py:20 models.py:68
+msgid "Heading"
+msgstr "Заголовок"
+
+#: models.py:21
+msgid "Hello, world!"
+msgstr "Привет, мир!"
+
+#: models.py:22
+msgid "The heading under the icon blurbs"
+msgstr "Заголовок под инфоблоком"
+
+#: models.py:23
+msgid "Subheading"
+msgstr "Подзаголовок"
+
+#: models.py:24
+msgid ""
+"This is a template for a simple marketing or informational website. It "
+"includes a large callout called a jumbotron and three supporting pieces of "
+"content. Use it as a starting point to create something more unique."
+msgstr ""
+
+#: models.py:28
+msgid "The subheading just below the heading"
+msgstr "Подзаголовок следующий сразу за заголовком"
+
+#: models.py:29
+msgid "Button text"
+msgstr "Текст кнопки"
+
+#: models.py:30
+msgid "Learn more"
+msgstr "Узнать больше"
+
+#: models.py:31
+msgid "Button link"
+msgstr "Ссылка для кнопки"
+
+#: models.py:32
+msgid "#"
+msgstr ""
+
+#: models.py:33
+msgid "Optional, if provided the heading button will be visible."
+msgstr "Если указана ссылка, то кнопка будет видима."
+
+#: models.py:34
+msgid "Iconbox heading"
+msgstr "Заголовок инфоблока"
+
+#: models.py:36
+msgid "Optional, if provided the iconbox heading will be visible."
+msgstr "Если указан, то будет отображаться над инфоблоком."
+
+#: models.py:37
+msgid "Content heading"
+msgstr "Заголовок для текста"
+
+#: models.py:38
+msgid "About us"
+msgstr "О нас"
+
+#: models.py:41
+msgid "Home page"
+msgstr "Главная страница"
+
+#: models.py:42
+msgid "Home pages"
+msgstr "Главные страницы"
+
+#: models.py:50 models.py:64
+msgid "Image"
+msgstr "Изображение"
+
+#: models.py:55
+msgid "Slide"
+msgstr "Слайд"
+
+#: models.py:56
+msgid "Slides"
+msgstr "Слайды"
+
+#: models.py:67
+msgid "Title"
+msgstr "Заголовок"
+
+#: models.py:69
+msgid "Content"
+msgstr "Содержание"
+
+#: models.py:71
+msgid "Link"
+msgstr "Ссылка"
+
+#: models.py:72
+msgid "Optional, if provided clicking the blurb will go here."
+msgstr "Если указана, то инфоблок будет иметь ссылку"
+
+#: models.py:75
+msgid "Icon blurb"
+msgstr "Инфоблок"
+
+#: models.py:76
+msgid "Icon blurbs"
+msgstr "Инфоблоки"
+
+#: models.py:80
+msgid "Box 1 title"
+msgstr "Блок 1 заголовок"
+
+#: models.py:80
+msgid "About"
+msgstr "О нас"
+
+#: models.py:81
+msgid "Box 1 content"
+msgstr "Блок 1 текст"
+
+#: models.py:82
+msgid "Box 2 title"
+msgstr "Блок 2 заголовок"
+
+#: models.py:82
+msgid "Contact Us"
+msgstr "Свяжитесь с нами"
+
+#: models.py:83
+msgid "Box 2 content"
+msgstr "Блок 2 текст"
+
+#: models.py:84
+msgid "Box 3 title"
+msgstr "Блок 3 заголовок"
+
+#: models.py:84
+msgid "Social links"
+msgstr "Мы в сети"
+
+#: models.py:85
+msgid "Box 3 content"
+msgstr "Блок 3 текст"
+
+#: models.py:88 models.py:89
+msgid "Sitewide Content"
+msgstr "Общие блоки"
+
+#: templates/pages/index.html:46
+msgid "View details"
+msgstr "Подробнее"

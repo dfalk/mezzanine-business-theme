@@ -1,0 +1,2 @@
+include AUTHORS CHANGELOG LICENSE README.rst
+recursive-include business_theme *
